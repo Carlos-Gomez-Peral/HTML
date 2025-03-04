@@ -1,39 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--How to make the book titles as a navigation -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookpage</title>
     <style>
+        body {
+            background-color:cornsilk;
+        }
+        h1 {
+            color:darkolivegreen
+        }
+        h2{
+            color:red
+        }
+        p{
+            color:rgb(255, 123, 0);
+            font-weight: bold;
+            text-align:center;
+        }
         div{
             width: 30%;
         }
         .grid-container {
             display: grid;
-            grid-template-columns: 33% 33% 33%;
+            grid-template-columns: 130% 130% 130%;
         }
         .btn{
-
+            font-size: 18px;;
+            background-color:mediumpurple;
+            color: white;
+            border-radius: 40px; 
         }
     </style>
 </head>
 <body>
     <h1>Book Store</h1>
+
     <div class="grid-container">
     <div>
-        <h2>title</h2>
-        <p>description</p>
-        <button class="btn">Sow description</button>
+        <h2>Proverbs</h2>
+        <p>King Solomon's guidance on the aspects of life and how to obtain wisdom</p>
+        <button class="btn" onclick="showdetails1()">Show description</button>
+        <p id="description1" style="display: none;">The Book of Proverbs is one of the most well-known books in the Bible, containing practical lessons and nuggets of wisdom. Its pages are filled with verses that tackle various aspects of life such as relationships, money, work, and morality. Most scholars agree that King Solomon contributed significantly to this book, making it a collection of sayings, advice, and reflections aimed at guiding people in their daily lives.
+
+            One key theme throughout Proverbs is the pursuit of wisdom. This wisdom is described as a valuable treasure that brings blessings and well-being to those who seek it. In many verses, wisdom is personified as a woman calling out to those who are willing to listen and learn. The book emphasizes that gaining wisdom begins with a healthy fear of the Lord, which is understood as a reverent respect and acknowledgment of God's authority. This fear leads to a life marked by integrity, righteousness, and justice.
+            
+            Another important aspect of Proverbs is its focus on relationships, highlighting the significance of friendship, family, and community. It contains various sayings about the value of good friends and the dangers of surrounding oneself with the wrong company. This leads to the advice to choose friends wisely and to engage in healthy relationships that build one another up. Likewise, it discusses the importance of familial bonds, emphasizing love and respect within the family dynamic.
+            
+            The book also addresses the theme of work and diligence. Proverbs advocates for a strong work ethic, portraying laziness as detrimental to personal success. It advises against procrastination and encourages people to take their responsibilities seriously. On the other hand, it extols the virtues of hard work, perseverance, and planning for the future. These lessons are valuable not only in a historical context but continue to resonate with people today, as they apply to modern work environments.
+            
+            Money management and wealth are discussed extensively, offering practical advice on how to handle finances. Proverbs showcases the importance of being wise with money, avoiding debt, and living within one’s means. It advises against greed and warns about the pitfalls of excessive wealth. Many verses teach about generosity and the value of giving to those in need, showing that true wealth is found in relationships and acts of kindness rather than material possessions.
+            
+            Throughout the book, the overarching message is that wisdom can lead to a fulfilling and righteous life. The sayings reflect a moral framework that guides individuals in making choices that align with a positive character. The wisdom found in Proverbs is timeless and applicable across generations, providing foundational principles for living a life of integrity, respect, and faith. </p>
+        <script>
+            function showdetails1() {
+                var text = document.getElementById("description1")
+                if (text.style.display === "none") {
+                    text.style.display = "block";
+                } else { 
+                    text.style.display = "none";
+                }
+            }
+        </script>
     </div>
+
     <div>
-        <h2>title2</h2>
-        <p>description2</p>
-        <button class="btn">Sow description</button>
+        <h2>Song of Solomon</h2>
+        <p>Love Poems between king Solomon and his wife 'The Shulammite'</p>
+        <button class="btn" onclick="showdetails2()">Show description'</button>
+        <p id="description2" style="display: none;">Song of Solomon is an Old Testament book that belongs to the third section of the biblical canon, known as the Ketuvim, or “Writings”. It is one of the five scrolls that are read on various religious festivals of the Jewish year. The Song of Solomon is a series of lyrical poems organized as a lengthy dialogue between a young woman and her lover. It is also called the Canticle of Canticles or the Song of Songs.</p>
+        <script>
+            function showdetails2() {
+                var text1 = document.getElementById("description2")
+                if (text1.style.display === "none") {
+                    text1.style.display = "block";
+                } else { 
+                    text1.style.display = "none";
+                }
+            }
+        </script>
     </div>
+
     <div>
         <h2>title3</h2>
         <p>description3</p>
-        <button class="btn">Sow description</button>
+        <button class="btn">Show description</button>
     </div>
     </div>
 </body>
