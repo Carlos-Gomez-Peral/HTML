@@ -18,14 +18,16 @@
         p{
             color:rgb(255, 123, 0);
             font-weight: bold;
-            text-align:center;
+            
         }
         div{
-            width: 30%;
+            width: 40%;
         }
         .grid-container {
             display: grid;
-            grid-template-columns: 130% 130% 130%;
+            grid-template-columns: 80% 80% 80%;
+            text-align: center;
+            margin-left: 40px;;
         }
         .btn{
             font-size: 18px;;
@@ -84,9 +86,27 @@
     </div>
 
     <div>
-        <h2>title3</h2>
-        <p>description3</p>
-        <button class="btn">Show description</button>
+        <h2>Random book</h2>
+        <p>A random boook with a random description</p>
+        <button class="btn" onclick=showdetails3()>Show description</button>
+        <p id="description3" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cumque unde natus quibusdam, aliquam sint sit, nostrum quis quia, eaque distinctio quisquam placeat? Itaque assumenda mollitia voluptatum esse tempore saepe!
+        Magnam numquam facere modi, at quas neque accusantium quod nam ullam assumenda, dolorem officiis ab totam aperiam aliquid, sunt ratione! Sint delectus odit nostrum officia natus omnis adipisci asperiores sit.
+        Facilis quos reprehenderit odio eum! Ea eos fuga, nesciunt a pariatur explicabo, commodi dolor, id cum laborum harum officia? Quod aspernatur aliquam asperiores velit laboriosam numquam omnis, amet aperiam possimus!
+        Omnis, velit esse tempore minima sequi voluptatem, odit ipsum temporibus magnam voluptas consequatur ab, neque similique. Nisi, minima culpa! Enim deleniti recusandae fugiat laboriosam vero eveniet a, soluta nobis facere!
+        Perspiciatis aspernatur a placeat veritatis hic atque saepe autem nisi! Architecto quod possimus, ratione pariatur, ab nihil, a asperiores rem impedit cupiditate ex provident et adipisci vero quaerat temporibus error.
+        Blanditiis illum, quidem sint corrupti asperiores nemo voluptas nesciunt consectetur reprehenderit, minus quos aliquam sunt placeat, voluptatum odio est? Totam, ipsa. Provident neque veritatis id nesciunt ducimus molestias! Veritatis, alias?
+        Explicabo, quidem iste et excepturi cupiditate ex porro ipsa sed? Recusandae odio rem quidem obcaecati quo est amet! Debitis sequi blanditiis consequuntur quibusdam excepturi voluptate recusandae laudantium impedit voluptatibus qui.
+        Fugiat, est omnis error veniam repellat ut at odio quis aspernatur quia facere id nesciunt eos, in maxime vitae! Minima consequatur eligendi quaerat illo esse animi aliquid laudantium accusamus placeat?</p>
+        <script>
+            function showdetails3() { 
+                var text3 = document.getElementById("description3")
+                if (text3.style.display === "none") {
+                    text3.style.display = "block";
+                } else {
+                    text3.style.display = "none";
+                }
+            }
+        </script>
     </div>
     </div>
 </body>
