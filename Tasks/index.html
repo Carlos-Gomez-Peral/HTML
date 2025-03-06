@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookpage</title>
+    <title>Library</title>
     <style>
         body {
             background-color:cornsilk;
@@ -36,6 +36,8 @@
             text-align: center;
             width: 100%;
             margin-left: 8%;
+            position:relative;
+            height: 100vh;
         }
         .btn{
             font-size: 18px;;
@@ -68,30 +70,14 @@
 <body>
     <div>
         <button id="b1" style="display: none;" onclick="scroll_top()">Home</button>
-        <script>
-            var button1 = document.getElementById("b1");
-            window.onscroll = function() {
-                if (document.body.scrollTop > 40 || document.documentElement.scrollTop>40) {
-                    button1.style.display = "block";
-                }  else { 
-                    button1.style.display = "none";
-                }
-            }
-            function scroll_top() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-
-            
-        </script>
     </div>
     <h1>Book Store</h1>
     <div class="grid-container">
-    <div class ="div">
-        <h2>Proverbs</h2>
-        <p class = "class">King Solomon's guidance on the aspects of life and how to obtain wisdom</p>
-        <button class="btn" onclick="showdetails1()">Show description</button>
-        <p id="description1" style="display: none;">The Book of Proverbs is one of the most well-known books in the Bible, containing practical lessons and nuggets of wisdom. Its pages are filled with verses that tackle various aspects of life such as relationships, money, work, and morality. Most scholars agree that King Solomon contributed significantly to this book, making it a collection of sayings, advice, and reflections aimed at guiding people in their daily lives.
+        <div class ="div">
+            <h2>Proverbs</h2>
+            <p class = "class">King Solomon's guidance on the aspects of life and how to obtain wisdom</p>
+            <button class="btn" onclick="showdetails1()">Show description</button>
+            <p id="description1" style="display: none;">The Book of Proverbs is one of the most well-known books in the Bible, containing practical lessons and nuggets of wisdom. Its pages are filled with verses that tackle various aspects of life such as relationships, money, work, and morality. Most scholars agree that King Solomon contributed significantly to this book, making it a collection of sayings, advice, and reflections aimed at guiding people in their daily lives.
 
             One key theme throughout Proverbs is the pursuit of wisdom. This wisdom is described as a valuable treasure that brings blessings and well-being to those who seek it. In many verses, wisdom is personified as a woman calling out to those who are willing to listen and learn. The book emphasizes that gaining wisdom begins with a healthy fear of the Lord, which is understood as a reverent respect and acknowledgment of God's authority. This fear leads to a life marked by integrity, righteousness, and justice.
             
@@ -102,58 +88,69 @@
             Money management and wealth are discussed extensively, offering practical advice on how to handle finances. Proverbs showcases the importance of being wise with money, avoiding debt, and living within one’s means. It advises against greed and warns about the pitfalls of excessive wealth. Many verses teach about generosity and the value of giving to those in need, showing that true wealth is found in relationships and acts of kindness rather than material possessions.
             
             Throughout the book, the overarching message is that wisdom can lead to a fulfilling and righteous life. The sayings reflect a moral framework that guides individuals in making choices that align with a positive character. The wisdom found in Proverbs is timeless and applicable across generations, providing foundational principles for living a life of integrity, respect, and faith. </p>
-        <script>
-            function showdetails1() {
-                var text = document.getElementById("description1")
-                if (text.style.display === "none") {
-                    text.style.display = "block";
-                } else { 
-                    text.style.display = "none";
-                }
-            }
-        </script>
-    </div>
+        </div>
 
-    <div class="div">
-        <h2>Song of Solomon</h2>
-        <p class = "class">Love Poems between king Solomon and his wife 'The Shulammite'</p>
-        <button class="btn" onclick="showdetails2()">Show description</button>
-        <p id="description2" style="display: none;">Song of Solomon is an Old Testament book that belongs to the third section of the biblical canon, known as the Ketuvim, or “Writings”. It is one of the five scrolls that are read on various religious festivals of the Jewish year. The Song of Solomon is a series of lyrical poems organized as a lengthy dialogue between a young woman and her lover. It is also called the Canticle of Canticles or the Song of Songs.</p>
-        <script>
-            function showdetails2() {
-                var text1 = document.getElementById("description2")
-                if (text1.style.display === "none") {
-                    text1.style.display = "block";
-                } else { 
-                    text1.style.display = "none";
-                }
-            }
-        </script>
-    </div>
+        <div class="div">
+            <h2>Song of Solomon</h2>
+            <p class = "class">Love Poems between king Solomon and his wife 'The Shulammite'</p>
+            <button class="btn" onclick="showdetails2()">Show description</button>
+            <p id="description2" style="display: none;">Song of Solomon is an Old Testament book that belongs to the third section of the biblical canon, known as the Ketuvim, or “Writings”. It is one of the five scrolls that are read on various religious festivals of the Jewish year. The Song of Solomon is a series of lyrical poems organized as a lengthy dialogue between a young woman and her lover. It is also called the Canticle of Canticles or the Song of Songs.</p>
+        </div>
 
-    <div class = "div">
-        <h2>Random book</h2>
-        <p class = "class">A random boook with a random description</p>
-        <button class="btn" onclick=showdetails3()>Show description</button>
-        <p id="description3" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cumque unde natus quibusdam, aliquam sint sit, nostrum quis quia, eaque distinctio quisquam placeat? Itaque assumenda mollitia voluptatum esse tempore saepe!
-        Magnam numquam facere modi, at quas neque accusantium quod nam ullam assumenda, dolorem officiis ab totam aperiam aliquid, sunt ratione! Sint delectus odit nostrum officia natus omnis adipisci asperiores sit.
-        Facilis quos reprehenderit odio eum! Ea eos fuga, nesciunt a pariatur explicabo, commodi dolor, id cum laborum harum officia? Quod aspernatur aliquam asperiores velit laboriosam numquam omnis, amet aperiam possimus!
-        Omnis, velit esse tempore minima sequi voluptatem, odit ipsum temporibus magnam voluptas consequatur ab, neque similique. Nisi, minima culpa! Enim deleniti recusandae fugiat laboriosam vero eveniet a, soluta nobis facere!
-        Perspiciatis aspernatur a placeat veritatis hic atque saepe autem nisi! Architecto quod possimus, ratione pariatur, ab nihil, a asperiores rem impedit cupiditate ex provident et adipisci vero quaerat temporibus error.
-        Blanditiis illum, quidem sint corrupti asperiores nemo voluptas nesciunt consectetur reprehenderit, minus quos aliquam sunt placeat, voluptatum odio est? Totam, ipsa. Provident neque veritatis id nesciunt ducimus molestias! Veritatis, alias?
-        Explicabo, quidem iste et excepturi cupiditate ex porro ipsa sed? Recusandae odio rem quidem obcaecati quo est amet! Debitis sequi blanditiis consequuntur quibusdam excepturi voluptate recusandae laudantium impedit voluptatibus qui.
-        Fugiat, est omnis error veniam repellat ut at odio quis aspernatur quia facere id nesciunt eos, in maxime vitae! Minima consequatur eligendi quaerat illo esse animi aliquid laudantium accusamus placeat?</p>
-        <script>
-            function showdetails3() { 
-                var text3 = document.getElementById("description3")
-                if (text3.style.display === "none") {
-                    text3.style.display = "block";
-                } else {
-                    text3.style.display = "none";
-                }
+        <div class = "div">
+            <h2>Random book</h2>
+            <p class = "class">A random boook with a random description</p>
+            <button class="btn" onclick=showdetails3()>Show description</button>
+            <p id="description3" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cumque unde natus quibusdam, aliquam sint sit, nostrum quis quia, eaque distinctio quisquam placeat? Itaque assumenda mollitia voluptatum esse tempore saepe!
+            Magnam numquam facere modi, at quas neque accusantium quod nam ullam assumenda, dolorem officiis ab totam aperiam aliquid, sunt ratione! Sint delectus odit nostrum officia natus omnis adipisci asperiores sit.
+            Facilis quos reprehenderit odio eum! Ea eos fuga, nesciunt a pariatur explicabo, commodi dolor, id cum laborum harum officia? Quod aspernatur aliquam asperiores velit laboriosam numquam omnis, amet aperiam possimus!
+            Omnis, velit esse tempore minima sequi voluptatem, odit ipsum temporibus magnam voluptas consequatur ab, neque similique. Nisi, minima culpa! Enim deleniti recusandae fugiat laboriosam vero eveniet a, soluta nobis facere!
+            Perspiciatis aspernatur a placeat veritatis hic atque saepe autem nisi! Architecto quod possimus, ratione pariatur, ab nihil, a asperiores rem impedit cupiditate ex provident et adipisci vero quaerat temporibus error.
+            Blanditiis illum, quidem sint corrupti asperiores nemo voluptas nesciunt consectetur reprehenderit, minus quos aliquam sunt placeat, voluptatum odio est? Totam, ipsa. Provident neque veritatis id nesciunt ducimus molestias! Veritatis, alias?
+            Explicabo, quidem iste et excepturi cupiditate ex porro ipsa sed? Recusandae odio rem quidem obcaecati quo est amet! Debitis sequi blanditiis consequuntur quibusdam excepturi voluptate recusandae laudantium impedit voluptatibus qui.
+            Fugiat, est omnis error veniam repellat ut at odio quis aspernatur quia facere id nesciunt eos, in maxime vitae! Minima consequatur eligendi quaerat illo esse animi aliquid laudantium accusamus placeat?</p>
+        </div>
+    </div>
+    <script>
+        var button1 = document.getElementById("b1");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 40 || document.documentElement.scrollTop>40) {
+                button1.style.display = "block";
+            }  else { 
+                button1.style.display = "none";
             }
-        </script>
-    </div>
-    </div>
+        }
+        function scroll_top() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        function showdetails1() {
+            var text = document.getElementById("description1")
+            if (text.style.display === "none") {
+                text.style.display = "block";
+            } else { 
+                text.style.display = "none";
+            }
+        }
+
+        function showdetails2() {
+            var text1 = document.getElementById("description2")
+            if (text1.style.display === "none") {
+                text1.style.display = "block";
+            } else { 
+                text1.style.display = "none";
+            }
+        }
+        
+        function showdetails3() { 
+            var text3 = document.getElementById("description3")
+            if (text3.style.display === "none") {
+                text3.style.display = "block";
+            } else {
+                text3.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
