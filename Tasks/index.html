@@ -36,8 +36,7 @@
             text-align: center;
             width: 100%;
             margin-left: 8%;
-            position:relative;
-            height: 100vh;
+           
         }
         .btn{
             font-size: 18px;;
@@ -65,6 +64,10 @@
         #b1:hover {
             padding: 40px;
         }
+        .image{
+            height: 120px;
+            width: 88px;
+        }
     </style>
 </head>
 <body>
@@ -75,8 +78,9 @@
     <div class="grid-container">
         <div class ="div">
             <h2>Proverbs</h2>
+            <img class="image" src="/Tasks/images/Proverbs.png" alt="Book cover for Proverbs">
             <p class = "class">King Solomon's guidance on the aspects of life and how to obtain wisdom</p>
-            <button class="btn" onclick="showdetails1()">Show description</button>
+            <button class="btn" onclick="showdetails('description1')">Show description</button>
             <p id="description1" style="display: none;">The Book of Proverbs is one of the most well-known books in the Bible, containing practical lessons and nuggets of wisdom. Its pages are filled with verses that tackle various aspects of life such as relationships, money, work, and morality. Most scholars agree that King Solomon contributed significantly to this book, making it a collection of sayings, advice, and reflections aimed at guiding people in their daily lives.
 
             One key theme throughout Proverbs is the pursuit of wisdom. This wisdom is described as a valuable treasure that brings blessings and well-being to those who seek it. In many verses, wisdom is personified as a woman calling out to those who are willing to listen and learn. The book emphasizes that gaining wisdom begins with a healthy fear of the Lord, which is understood as a reverent respect and acknowledgment of God's authority. This fear leads to a life marked by integrity, righteousness, and justice.
@@ -92,16 +96,18 @@
 
         <div class="div">
             <h2>Song of Solomon</h2>
+            <img class="image" src="/Tasks/images/Songsolomon.png" alt="Book cover for Song of Solomon">
             <p class = "class">Love Poems between king Solomon and his wife 'The Shulammite'</p>
-            <button class="btn" onclick="showdetails2()">Show description</button>
+            <button class="btn" onclick="showdetails('description2')">Show description</button>
             <p id="description2" style="display: none;">Song of Solomon is an Old Testament book that belongs to the third section of the biblical canon, known as the Ketuvim, or “Writings”. It is one of the five scrolls that are read on various religious festivals of the Jewish year. The Song of Solomon is a series of lyrical poems organized as a lengthy dialogue between a young woman and her lover. It is also called the Canticle of Canticles or the Song of Songs.</p>
         </div>
 
         <div class = "div">
             <h2>Random book</h2>
+            <img class="image" src="" alt="">
             <p class = "class">A random boook with a random description</p>
-            <button class="btn" onclick=showdetails3()>Show description</button>
-            <p id="description3" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cumque unde natus quibusdam, aliquam sint sit, nostrum quis quia, eaque distinctio quisquam placeat? Itaque assumenda mollitia voluptatum esse tempore saepe!
+            <button class="btn" onclick="showdetails('description3')">Show description</button>
+            <p id="description3" style="display: none;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cumque unde natus quibusdam, aliquam sint sit, nostrum quis quia, eaque distinctio quisquam placeat? Itaque assumenda mollitia voluptatum esse tempore saepe!
             Magnam numquam facere modi, at quas neque accusantium quod nam ullam assumenda, dolorem officiis ab totam aperiam aliquid, sunt ratione! Sint delectus odit nostrum officia natus omnis adipisci asperiores sit.
             Facilis quos reprehenderit odio eum! Ea eos fuga, nesciunt a pariatur explicabo, commodi dolor, id cum laborum harum officia? Quod aspernatur aliquam asperiores velit laboriosam numquam omnis, amet aperiam possimus!
             Omnis, velit esse tempore minima sequi voluptatem, odit ipsum temporibus magnam voluptas consequatur ab, neque similique. Nisi, minima culpa! Enim deleniti recusandae fugiat laboriosam vero eveniet a, soluta nobis facere!
@@ -125,8 +131,8 @@
             document.documentElement.scrollTop = 0;
         }
 
-        function showdetails1() {
-            var text = document.getElementById("description1")
+        function showdetails(description) {
+            var text = document.getElementById(description)
             if (text.style.display === "none") {
                 text.style.display = "block";
             } else { 
@@ -134,23 +140,6 @@
             }
         }
 
-        function showdetails2() {
-            var text1 = document.getElementById("description2")
-            if (text1.style.display === "none") {
-                text1.style.display = "block";
-            } else { 
-                text1.style.display = "none";
-            }
-        }
-        
-        function showdetails3() { 
-            var text3 = document.getElementById("description3")
-            if (text3.style.display === "none") {
-                text3.style.display = "block";
-            } else {
-                text3.style.display = "none";
-            }
-        }
     </script>
 </body>
 </html>
